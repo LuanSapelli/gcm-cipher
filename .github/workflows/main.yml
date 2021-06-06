@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
+      
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment: 
+      name: dev
+      url: 'sapelli.com'
+    needs: [build]
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy in dev!
+        
+  deploy-hml:
+    runs-on: ubuntu-latest
+    environment: 
+      name: hml
+      url: 'sapelli.com'
+    needs: [deploy-dev]
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy in dev!
+  
+  deploy-prd:
+    runs-on: ubuntu-latest
+    environment: 
+      name: prd
+      url: 'sapelli.com'
+    needs: [deploy-hml]
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy in dev!
