@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: dev
-      url: 'sapelli.com'
+      url: 'luansapelli.com'
     needs: [build]
     steps:
       - name: Run a one-line script
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: hml
-      url: 'sapelli.com'
+      url: 'luansapelli.com'
     needs: [deploy-dev]
     steps:
       - name: Run a one-line script
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: prd
-      url: 'sapelli.com'
+      url: 'luansapelli.com'
     needs: [deploy-hml]
     steps:
       - name: Run a one-line script
