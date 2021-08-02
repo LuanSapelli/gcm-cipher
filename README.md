@@ -1,4 +1,4 @@
-# golang-gcm-cipher 🧙🏽‍♂️
+# gcm-cipher 🧙🏽‍♂️
 
 Simple API to encrypt and decrypt strings using the AES/GCM method.
 
