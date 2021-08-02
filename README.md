@@ -1,15 +1,13 @@
-# Golang GCM Cipher 🚀
+# golang-gcm-cipher
 
-<p>
-Simple API to encrypt and decrypt strings using the AES/GCM method
-</p>
+Simple API to encrypt and decrypt strings using the AES/GCM method.
 
-### Step by step
+### how-to
 
 ##### Executing the API
-1. Set the enviroment vars (`.env.example`), these vars are encryption keys, you can change them as you wish
-2. Execute `go run main.go`
-3. In postman or browser, use the `health-check` endpoint (`http://localhost/gcm-cipher/api/health-check`), if you get this response, smile! (`"status": "alive and kicking!"`)
+1. Set the enviroment vars (`.env.example`), these vars are encryption keys, you can change them as you wish.
+2. Execute `go run main.go`.
+3. In postman or browser, use the `health-check` endpoint (`http://localhost/gcm-cipher/api/health-check`) to check if the service is running. 
 
 ##### Encrypt Endpoint
 1. URL: `http://localhost/gcm-cipher/api/encrypt-data`
